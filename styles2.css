@@ -9,12 +9,12 @@
 }
 
 :root {
-    --bg-color: #0b6d4c;
+    --bg-color: white;
     --main-color: #e67e22;
     --text-color: #0b6d4c;
     --second-text-color: #e67e22;
     --white-color: #fff;
-    --cover-color: linear-gradient(45deg, #0b6d4c, #e67e22);
+    --cover-color: linear-gradient(45deg, #0b6d4c, #0c7c3e);
     --pages-color: linear-gradient(90deg, #fff, #ddd);
     --border: .125rem solid #0b6d4c;
     --box-shadow: 0 0 .6rem rgba(0, 0, 0, .2);
@@ -80,13 +80,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.profile-page img {
-    max-width: 180px;
-    border-radius: 50%;
-    border: .25rem solid var(--main-color);
-    margin-bottom: .8rem;
 }
 
 .book-page.page-right {
