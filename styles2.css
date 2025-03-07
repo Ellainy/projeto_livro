@@ -72,7 +72,7 @@ body {
     background: var(--pages-color);
     box-shadow: 0.0 .6rem rgba(0, 0, 0, .1);
     display: flex;
-    padding: 2rem;
+    padding: 0rem;
 }
 
 .profile-page {
@@ -102,7 +102,6 @@ body {
     width: 100%;
     height: 100%;
     background: var(--pages-color);
-    padding: 1.5rem 2rem;
 }
 
 .book-page .page-front {
@@ -134,4 +133,34 @@ body {
 
 .nextprev-btn.back {
     left: 1.5rem;
+}
+
+.book-page {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: var(--pages-color);
+    box-shadow: 0.0 .6rem rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-page .page-front, .book-page .page-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    overflow: hidden;
+}
+.book-img {
+    max-width: 100%; /* A imagem ocupará 100% da largura da página */
+    max-height: 100%; /* A imagem ocupará 100% da altura da página */
+    object-fit: cover; /* A imagem será redimensionada para cobrir a área da página sem deformar */
+    object-position: center; /* Mantém a imagem centralizada */
 }
