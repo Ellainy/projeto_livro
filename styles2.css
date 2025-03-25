@@ -10,13 +10,11 @@
 
 :root {
     --bg-color: white;
-    --main-color: #e67e22;
-    --text-color: #0b6d4c;
-    --second-text-color: #e67e22;
+    --second-text-color: #6B9071;
     --white-color: #fff;
-    --cover-color: linear-gradient(45deg, #0b6d4c, #0c7c3e);
-    --pages-color: linear-gradient(90deg, #fff, #ddd);
-    --border: .125rem solid #0b6d4c;
+    --cover-color: linear-gradient(45deg,#0f2a1d, #375534);
+    --pages-color: linear-gradient(90deg, #0f2a1d, #375534);
+    --border: .125rem solid #375534;
     --box-shadow: 0 0 .6rem rgba(0, 0, 0, .2);
 }
 
