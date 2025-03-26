@@ -1,8 +1,12 @@
-header {
-    background-color: #0f2a1d; 
-    color: white;
-}
+/* Importa fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+.gradient {
+    background: linear-gradient(135deg,#0f2a1d, #375534);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    
+}
 
 .site {
 background-color: #0f2a1d;
@@ -18,3 +22,36 @@ background-color: #0f2a1d;
 .verdeTexto {
     color: #0f2a1d !important;
 }
+
+.btn-custom {
+    background-color: #6B9071; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; 
+    border-radius: 30px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor muda ao passar por cima */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efeitos de transição */
+  }
+
+  /* Efeito ao passar o mouse */
+  .btn-custom:hover {
+    background-color:  #7bda8a;
+    transform: scale(1.05);
+  }
+
+
+
+
+main.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel: ajuste para imagens */
+.carousel-inner img {
+  object-fit: cover;
+  height: 400px;
+}
+

@@ -1,45 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livros</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livros - Projeto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <header class="d-flex justify-content-between align-items-center p-3 bg-shadow">
+    <!-- Cabeçalho -->
+    <header class="gradient d-flex justify-content-between align-items-center p-3 bg-shadow">
         <h1>TITULO <span>PROJETO</span></h1>
         <nav>
             <ul class="nav">
-                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="lerlivro.html">Livros</a></li>
-                <li class="nav-item"><a class="nav-link verdeTexto bg-white rounded-5 fw-bold" href="sobre.html">Sobre</a></li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="lerlivro.html">Livros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link verdeTexto bg-white rounded-5 fw-bold" href="sobre.html">Sobre</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <section class="verde py-5">
-        <div class="w-100 d-flex flex-column py-5 align-items-center">
-            <h4 class="mx-auto text-center w-75">A ideia para este livro surgiu a partir de nossa jornada de aprendizado e das experiências sobre as mudanças climáticas e como elas afetam diferentes partes do mundo. Através dessa história, queremos mostrar que as comunidades vulneráveis sofrem com mais intensidade os impactos causados pelas mudanças climáticas e como o agir local pode inspirar o global.<h4>
+    <!-- Seção de apresentação -->
+    <section class="gradient py-5">
+        <div class="container d-flex flex-column align-items-center">
+            <img src="static/imgs/greenstar.svg" alt="Green Star" height="50" />
+            <h1 class="text-center my-4">Sobre esse site!</h1>
         </div>
     </section>
 
+    <!-- Introdução -->
     <main class="container my-5">
-        <section>
-            <div class="row">
-                <div class="col-md-8">
-                <h2 class=" verdeTexto fw-bold">Sobre o livro!</h2>
-                <h6>O livro acompanha Zoila e Juan, dois jovens que chegam a São Paulo do Potengi para um intercâmbio e acabam se hospedando na casa de Júlia, uma estudante de Meio Ambiente do IFRN. Empolgados com a ideia de conhecer uma nova cultura e aprender com essa experiência, logo percebem que, apesar de virem de lugares tão diferentes, enfrentam um desafio comum: o impacto das mudanças climáticas, especialmente nas comunidades mais vulneráveis. Com isso, eles percebem que, mesmo estando longe de casa, suas ações podem gerar um impacto positivo. Decidem, então, agir localmente, começando pela cidade de São Paulo do Potengi, mas com a certeza de que suas escolhas podem reverberar globalmente.    
-                </h6>
-                </div>
-            </div>
+        <section class="mb-5">
+            <p class="text-center w-75 mx-auto">
+                A ideia para este livro surgiu a partir de nossa jornada de aprendizado e das experiências sobre as
+                mudanças climáticas e como elas afetam diferentes partes do mundo. Através dessa história, queremos
+                mostrar que as comunidades vulneráveis sofrem com mais intensidade os impactos causados pelas mudanças
+                climáticas e como o agir local pode inspirar o global.
+            </p>
         </section>
     </main>
+    <!-- Conteúdo principal -->
+
+    <!-- Carousel -->
+    <section class="mb-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="static/imgs/m.jpg" class="d-block w-100" alt="Imagem 1" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="static/imgs/a.jpg" class="d-block w-100" alt="Imagem 2" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="static/imgs/j.jpg" class="d-block w-100" alt="Imagem 3" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Seção sobre o livro -->
+    <section class="gradient py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="fw-bold">Sobre o livro!</h2>
+                    <p>
+                        O livro acompanha Zoila e Juan, dois jovens que chegam a São Paulo do Potengi para um
+                        intercâmbio e acabam se hospedando na casa de Júlia, uma estudante de Meio Ambiente do IFRN.
+                        Empolgados com a ideia de conhecer uma nova cultura e aprender com essa experiência, logo
+                        percebem que, apesar de virem de lugares tão diferentes, enfrentam um desafio comum: o impacto
+                        das mudanças climáticas, especialmente nas comunidades mais vulneráveis. Com isso, eles percebem
+                        que, mesmo estando longe de casa, suas ações podem gerar um impacto positivo. Decidem, então,
+                        agir localmente, começando pela cidade de São Paulo do Potengi, mas com a certeza de que suas
+                        escolhas podem reverberar globalmente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
     <footer class="verde text-white text-center p-3 mt-5">
         <p>&copy; IFRN-SPP 2025.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
