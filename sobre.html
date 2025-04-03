@@ -26,8 +26,8 @@
                     <a class="nav-link verdeTexto bg-white rounded-5 fw-bold" href="sobre.html">Sobre</a>
                 </li>
                 <div class="dropdown">
-                    <button class="verdeTexto fw-bold btn btn-light dropdown-toggle d-sm-none" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                    <button class="verdeTexto fw-bold btn btn-light dropdown-toggle d-sm-none" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Sobre
                     </button>
                     <ul class="dropdown-menu">
@@ -185,47 +185,63 @@
             <h2 class="fw-bold verdeTexto text-uppercase mb-0">Nossa Equipe</h2>
             <img src="static/imgs/greenStar.svg" alt="Estrela Verde" height="50">
         </div>
-        <p class=" verdinho lead text-center mb-5">Conheça os membros da nossa equipe que tornaram este projeto
-            possível.</p>
+        <p class="verdinho lead text-center mb-5">Conheça os membros da nossa equipe que tornaram este projeto possível.
+        </p>
 
-        <div class="row justify-content-center text-center">
-            <!-- Linha 1 (3 membros) -->
-            <div class="col-md-4 mb-4">
-                <img src="static/imgs/perfil.png" class="rounded-circle" width="150" alt="Membro 1">
-                <h5 class="verdeTexto mt-2 fw-bold">Ilustrador 1</h5>
-                <p class="verdinho fw-bold">Ilustrador</p>
+        <div id="carouselEquipe" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <img src="static/imgs/perfil.png" class="rounded-circle" width="150" alt="Membro 1">
+                            <h5 class="verdeTexto mt-2 fw-bold">Ilustrador 1</h5>
+                            <p class="verdinho fw-bold">Ilustrador</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="static/imgs/perfil.png" class="rounded-circle" width="150" alt="Membro 2">
+                            <h5 class="verdeTexto mt-2 fw-bold">Orientador</h5>
+                            <p class="verdinho fw-bold">Orientador</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="static/imgs/perfil.png" class="rounded-circle" width="150" alt="Membro 3">
+                            <h5 class="verdeTexto mt-2 fw-bold">Ilustrador 2</h5>
+                            <p class="verdinho fw-bold">Ilustrador</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <img src="static/imgs/perfil.png" class="rounded-circle" width="150" alt="Membro 4">
+                            <h5 class="verdeTexto mt-2 fw-bold">Escritor 1</h5>
+                            <p class="verdinho fw-bold">Escritor</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="static/imgs/perfil.png" class="rounded-circle" width="150" alt="Membro 5">
+                            <h5 class="verdeTexto mt-2 fw-bold">Escritor 2</h5>
+                            <p class="verdinho fw-bold">Escritor</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="static/imgs/perfil.png" class="rounded-circle" width="150" alt="Membro 6">
+                            <h5 class="verdeTexto mt-2">Ellainy Nayara</h5>
+                            <p class="verdinho fw-bold">Desenvolvimento do site</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <img src="static/imgs/perfil.png" class="rounded-circle" width="150" alt="Membro 2">
-                <h5 class="verdeTexto mt-2 fw-bold">Orientador</h5>
-                <p class="verdinho fw-bold">Orientador</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="static/imgs/perfil.png" class="rounded-circle" width="150" alt="Membro 3">
-                <h5 class="verdeTexto mt-2 fw-bold">Ilustrador 2</h5>
-                <p class="verdinho fw-bold">Ilustrador</p>
-            </div>
-
-            <!-- Linha 2 (2 membros) -->
-            <div class="col-md-4 mb-4">
-                <img src="static/imgs/perfil.png" class="rounded-circle" width="150" alt="Membro 4">
-                <h5 class="verdeTexto mt-2 fw-bold">Escritor 1</h5>
-                <p class="verdinho fw-bold fw-bold">Escritor</p>
-            </div>
-            <div class="col-md-4 col-sm-11 mb-4">
-                <img src="static/imgs/perfil.png" class="rounded-circle" width="150" alt="Membro 5">
-                <h5 class="verdeTexto mt-2 fw-bold">Escritor 2</h5>
-                <p class="verdinho fw-bold">Escritor</p>
-            </div>
-
-            <!-- Linha 3 (1 membro) -->
-            <div class="col-md-12 mb-4">
-                <img src="static/imgs/perfil.png" class="rounded-circle" width="150" alt="Membro 6">
-                <h5 class="verdeTexto mt-2">Ellainy Nayara</h5>
-                <p class="verdinho fw-bold">Desenvolvimento do site</p>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEquipe" data-bs-slide="prev"
+                style="filter: invert(100%);">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEquipe" data-bs-slide="next"
+                style="filter: invert(100%);">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
         </div>
     </section>
+
 
     <!-- Rodapé -->
     <footer class="verde text-white text-center p-3 mt-5">

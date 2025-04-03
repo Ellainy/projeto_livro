@@ -5,15 +5,14 @@
     text-decoration: none;
     border: none;
     outline: none;
-    font-family: 'Roboto', sans-serif;
 }
 
 :root {
-    --bg-color: white;
-    --second-text-color: #6B9071;
+    --bg-color: #0f2a1d;
+    --second-text-color: #ffffff;
     --white-color: #fff;
-    --cover-color: linear-gradient(45deg,#0f2a1d, #375534);
-    --pages-color: linear-gradient(90deg, #0f2a1d, #375534);
+    --cover-color: linear-gradient(45deg,#375534, #6B9071);
+    --pages-color: linear-gradient(90deg, #ffffff, #f5f5f5);
     --border: .125rem solid #375534;
     --box-shadow: 0 0 .6rem rgba(0, 0, 0, .2);
 }
@@ -29,7 +28,7 @@ body {
 
 .wrapper {
     position: relative;
-    width: 66rem;
+    width: 73rem;
     height: 45rem;
     padding: 2rem;
 }
