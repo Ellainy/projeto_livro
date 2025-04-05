@@ -1,389 +1,120 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Um festival de mudanças</title>
-    <link rel="stylesheet" href="styles2.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQKOcb+KreZlCuLO8zRB4zO2LBJRs7Djj9K55pCIZ8pDqJRVwC+U7B9fR" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles2.css" />
+    <title>Um festival de mudanças!</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="cover cover-left"></div>
-        <div class="cover cover-right turn"></div>
-
-        <div class="book">
-            <div class="book-page page-left">
-                <div class="workeduc-box">
-                    <img src="static/imgs/2.jpg" alt="Imagem 1" class="book-img">
-            </div>
-            </div>
-
-            <!-- page 1 & 2 -->
-            <div class="book-page page-right turn" id="turn-1">
-                <!-- page 1 (work experience) -->
-                <div class="page-front">
-                    <div class="workeduc-box">
-                            <img src="static/imgs/1.jpg" alt="Imagem 1" class="book-img">
-                    </div>
-
-                    <!-- netx page button -->
-                    <span class="nextprev-btn" data-page="turn-1">
-                        <i class="bi bi-chevron-right"></i>
-                    </span>
-                </div>
-
-                <!-- page 2 (lalala) -->
-                <div class="page-back">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/2.jpg" alt="Imagem 1" class="book-img">
-                    </div>
-
-                    <!-- prev page button -->
-                    <span class="nextprev-btn back" data-page="turn-1">
-                        <i class="bi bi-chevron-left"></i>
-                    </span>
-                </div>
-            </div>
-
-            <!-- page 3 & 4 -->
-            <div class="book-page page-right turn" id="turn-2">
-                <!-- page 3 (my servises) -->
-                <div class="page-front">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/4.jpg" alt="Imagem 1" class="book-img">
-                </div>
-
-                    <!-- next button -->
-                    <span class="nextprev-btn" data-page="turn-2">
-                        <i class="bi bi-chevron-right"></i>
-                    </span>
-                </div>
-
-
-                <!-- page 4 (skills) -->
-                <div class="page-back">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/4.jpg" alt="Imagem 1" class="book-img">
-                </div>
-
-                    <!-- prev button -->
-                    <span class="nextprev-btn back" data-page="turn-2">
-                        <i class="bi bi-chevron-left"></i>
-                    </span>
-                </div>
-            </div>
-            
-            <!-- page 5 & 6 -->
-            <div class="book-page page-right turn" id="turn-3">
-                <!-- page 5 (latest project or my portifolio) -->
-                <div class="page-front">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/5.jpg" alt="Imagem 1" class="book-img">
-                </div>
-
-                    <!-- next button -->
-                    <span class="nextprev-btn" data-page="turn-3">
-                        <i class="bi bi-chevron-right"></i>
-                    </span>   
-                </div>
-
-                <!-- page 6 (contact me) -->
-                <div class="page-back">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/6.jpg" alt="Imagem 1" class="book-img">
-                </div>
-
-                     <!-- prev button -->
-                     <span class="nextprev-btn back" data-page="turn-3">
-                        <i class="bi bi-chevron-left"></i>
-                    </span>
-                </div>
-            </div>
-
-             <!-- page 7 & 8 -->
-             <div class="book-page page-right turn" id="turn-4">
-                <!-- page 7 (latest project or my portifolio) -->
-                <div class="page-front">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/7.jpg" alt="Imagem 1" class="book-img">
-                </div>
-
-                    <!-- next button -->
-                    <span class="nextprev-btn" data-page="turn-4">
-                        <i class="bi bi-chevron-right"></i>
-                    </span>   
-                </div>
-
-                <!-- page 8 (contact me) -->
-                <div class="page-back">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/8.jpg" alt="Imagem 1" class="book-img">
-                </div>
-
-                     <!-- prev button -->
-                     <span class="nextprev-btn back" data-page="turn-4">
-                        <i class="bi bi-chevron-left"></i>
-                    </span>
-                </div>
-            </div>
-
-            <!-- page 9 & 10 -->
-            <div class="book-page page-right turn" id="turn-5">
-                <!-- page 7 (latest project or my portifolio) -->
-                <div class="page-front">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/9.jpg" alt="Imagem 1" class="book-img">
-                </div>
-
-                    <!-- next button -->
-                    <span class="nextprev-btn" data-page="turn-5">
-                        <i class="bi bi-chevron-right"></i>
-                    </span>   
-                </div>
-
-                <!-- page 8 (contact me) -->
-                <div class="page-back">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/10.jpg" alt="Imagem 1" class="book-img">
-                </div>
-
-                     <!-- prev button -->
-                     <span class="nextprev-btn back" data-page="turn-5">
-                        <i class="bi bi-chevron-left"></i>
-                    </span>
-                </div>
-            </div>
-
-            <!-- page 11 & 12 -->
-            <div class="book-page page-right turn" id="turn-6">
-                <!-- page 7 (latest project or my portifolio) -->
-                <div class="page-front">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/11.jpg" alt="Imagem 1" class="book-img"> 
-                    </div>
-
-                    <!-- next button -->
-                    <span class="nextprev-btn" data-page="turn-6">
-                        <i class="bi bi-chevron-right"></i>
-                    </span>   
-                </div>
-
-                <!-- page 12 (contact me) -->
-                <div class="page-back">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/12.jpg" alt="Imagem 1" class="book-img">
-                </div>
-
-                     <!-- prev button -->
-                     <span class="nextprev-btn back" data-page="turn-6">
-                        <i class="bi bi-chevron-left"></i>
-                    </span>
-                </div>
-            </div> 
-
-            <!-- page 13 & 14 -->
-            <div class="book-page page-right turn" id="turn-7">
-                <!-- page 7 (latest project or my portifolio) -->
-                <div class="page-front">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/13.jpg" alt="Imagem 1" class="book-img"> 
-                    </div>
-
-                    <!-- next button -->
-                    <span class="nextprev-btn" data-page="turn-7">
-                        <i class="bi bi-chevron-right"></i>
-                    </span>   
-                </div>
-
-                <!-- page 13 (contact me) -->
-                <div class="page-back">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/14.jpg" alt="Imagem 1" class="book-img">
-                </div>
-
-                     <!-- prev button -->
-                     <span class="nextprev-btn back" data-page="turn-7">
-                        <i class="bi bi-chevron-left"></i>
-                    </span>
-                </div>
-            </div> 
-
-             <!-- page 17 & 18 -->
-             <div class="book-page page-right turn" id="turn-8">
-                <!-- page 7 (latest project or my portifolio) -->
-                <div class="page-front">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/15.jpg" alt="Imagem 1" class="book-img"> 
-                    </div>
-
-                    <!-- next button -->
-                    <span class="nextprev-btn" data-page="turn-8">
-                        <i class="bi bi-chevron-right"></i>
-                    </span>   
-                </div>
-
-                <!-- page 13 (contact me) -->
-                <div class="page-back">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/16.jpg" alt="Imagem 1" class="book-img">
-                </div>
-
-                     <!-- prev button -->
-                     <span class="nextprev-btn back" data-page="turn-8">
-                        <i class="bi bi-chevron-left"></i>
-                    </span>
-                </div>
-            </div> 
-
-            <!-- page 19 & 20 -->
-            <div class="book-page page-right turn" id="turn-9">
-                <!-- page 7 (latest project or my portifolio) -->
-                <div class="page-front">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/17.jpg" alt="Imagem 1" class="book-img"> 
-                    </div>
-
-                    <!-- next button -->
-                    <span class="nextprev-btn" data-page="turn-9">
-                        <i class="bi bi-chevron-right"></i>
-                    </span>   
-                </div>
-
-                <!-- page 20 (contact me) -->
-                <div class="page-back">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/18.jpg" alt="Imagem 1" class="book-img">
-                </div>
-
-                     <!-- prev button -->
-                     <span class="nextprev-btn back" data-page="turn-9">
-                        <i class="bi bi-chevron-left"></i>
-                    </span>
-                </div>
-            </div> 
-
-            <!-- page 21 & 22 -->
-            <div class="book-page page-right turn" id="turn-10">
-                <!-- page 7 (latest project or my portifolio) -->
-                <div class="page-front">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/19.jpg" alt="Imagem 1" class="book-img"> 
-                    </div>
-
-                    <!-- next button -->
-                    <span class="nextprev-btn" data-page="turn-10">
-                        <i class="bi bi-chevron-right"></i>
-                    </span>   
-                </div>
-
-                <!-- page 20 (contact me) -->
-                <div class="page-back">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/20.jpg" alt="Imagem 1" class="book-img">
-                </div>
-
-                     <!-- prev button -->
-                     <span class="nextprev-btn back" data-page="turn-10">
-                        <i class="bi bi-chevron-left"></i>
-                    </span>
-                </div>
-            </div> 
-
-            <!-- page 23 & 24 -->
-            <div class="book-page page-right turn" id="turn-11">
-                <!-- page 7 (latest project or my portifolio) -->
-                <div class="page-front">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/21.jpg" alt="Imagem 1" class="book-img"> 
-                    </div>
-
-                    <!-- next button -->
-                    <span class="nextprev-btn" data-page="turn-11">
-                        <i class="bi bi-chevron-right"></i>
-                    </span>   
-                </div>
-
-                <!-- page 20 (contact me) -->
-                <div class="page-back">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/22.jpg" alt="Imagem 1" class="book-img">
-                </div>
-
-                     <!-- prev button -->
-                     <span class="nextprev-btn back" data-page="turn-11">
-                        <i class="bi bi-chevron-left"></i>
-                    </span>
-                </div>
-            </div> 
-
-
-             <!-- page 25 & 26 -->
-             <div class="book-page page-right turn" id="turn-12">
-                <!-- page 7 (latest project or my portifolio) -->
-                <div class="page-front">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/23.jpg" alt="Imagem 1" class="book-img"> 
-                    </div>
-
-                    <!-- next button -->
-                    <span class="nextprev-btn" data-page="turn-12">
-                        <i class="bi bi-chevron-right"></i>
-                    </span>   
-                </div>
-
-                <!-- page 20 (contact me) -->
-                <div class="page-back">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/24.jpg" alt="Imagem 1" class="book-img">
-                </div>
-
-                     <!-- prev button -->
-                     <span class="nextprev-btn back" data-page="turn-12">
-                        <i class="bi bi-chevron-left"></i>
-                    </span>
-                </div>
-            </div> 
-
-             <!-- page 27  -->
-             <div class="book-page page-right turn" id="turn-13">
-                <!-- page 7 (latest project or my portifolio) -->
-                <div class="page-front">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/25.jpg" alt="Imagem 1" class="book-img"> 
-                    </div>
-
-                    <!-- next button -->
-                    <span class="nextprev-btn" data-page="turn-13">
-                        <i class="bi bi-chevron-right"></i>
-                    </span>   
-                </div>
-
-                <!-- page 20 (contact me) -->
-                <div class="page-back">
-                    <div class="workeduc-box">
-                        <img src="static/imgs/26.jpg" alt="Imagem 1" class="book-img">
-                </div>
-
-                     <!-- prev button -->
-                     <span class="nextprev-btn back" data-page="turn-13">
-                        <i class="bi bi-chevron-left"></i>
-                    </span>
-                </div>
-            </div> 
-            
-        </div>
+    <div id="rotate-notice">
+        <p>📱 Vire seu celular para a horizontal para visualizar o livro melhor!</p>
     </div>
 
+    <div class="flipbook">
+        <div class="hard"><img src="static/imgs/capa.jpg" alt=""></div>
+        <div class="hard"></div>
+        <div>
+            
+        </div>
+        <div>
+            <img src="static/imgs/1.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/2.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/3.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/4.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/5.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/6.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/7.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/8.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/9.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/10.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/11.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/12.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/13.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/14.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/15.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/16.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/17.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/18.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/19.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/20.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/21.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/22.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/23.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/24.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/25.jpg" alt="" />
+        </div>
+        <div>
+            <img src="static/imgs/26.jpg" alt="" />
+        </div>
+        
+        <div class="hard"></div>
+        <div class="hard">Thank You <small>~ HankTheTank</small></div>
+    </div>
 
-
-
-    <script src="script.js"></script>
-
+    <script src="jquery.js"></script>
+    <script src="turn.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".flipbook").turn({
+                width: 1000,
+                height: 600,
+                autoCenter: true,
+                elevation: 50,
+                gradients: true
+            });
+        });
+    </script>
 </body>
 
 </html>

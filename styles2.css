@@ -1,163 +1,87 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-}
-
-:root {
-    --bg-color: #0f2a1d;
-    --second-text-color: #ffffff;
-    --white-color: #fff;
-    --cover-color: linear-gradient(45deg,#375534, #6B9071);
-    --pages-color: linear-gradient(90deg, #ffffff, #f5f5f5);
-    --border: .125rem solid #375534;
-    --box-shadow: 0 0 .6rem rgba(0, 0, 0, .2);
+	font-family: "Poppins", sans-serif;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: var(--bg-color);
-    color: var(--text-color)
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    width: 100vw;
+	overflow: hidden;
+	background: #0f2a1d;
 }
 
-.wrapper {
-    position: relative;
-    width: 73rem;
-    height: 45rem;
-    padding: 2rem;
+.flipbook {
+    width: 1000px;
+    height: 600px;
 }
 
-.cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: var(--cover-color);
-    box-shadow: var(--box-shadow);
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-    transform-origin: right;
+.flipbook .hard {
+    background: #c0392b !important;
+    color: #fff;
+    font-weight: bold;
+    border: none; 
 }
 
-.cover.cover-left {
-    z-index: -1;
+.flipbook .hard small{
+	font-style: italic;
+	font-weight: lighter;
+	opacity: 0.7;
+	font-size: 14px;
 }
 
-.cover.cover-right.turn {
-    transform: rotateY(180deg);
+.flipbook .page {
+    background: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    gap: 10px;
 }
 
-.book {
-    position: relative;
+.page img {
     width: 100%;
     height: 100%;
-    display: flex;
-    perspective: 250rem;
+    object-fit: cover;
+    display: block;
+  }
+  
+
+.flipbook .page small{
+	font-size: 14px;
+    margin-bottom: 10px;
 }
 
-.book .book-page {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    background: var(--pages-color);
-    box-shadow: 0.0 .6rem rgba(0, 0, 0, .1);
-    display: flex;
-    padding: 0rem;
-}
-
-.profile-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.book-page.page-right {
-    position: absolute;
-    right: 0;
-    transform-style: preserve-3d;
-    transform-origin: left;
-    transition: transform 1s cubic-bezier(.645, .045, .355, 1);
-}
-
-.book-page.page-right.turn {
-    transform: rotateY(-180deg);
-}
-
-.book-page .page-front,
-.book-page .page-back {
-    position: absolute;
+#rotate-notice {
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--pages-color);
-}
-
-.book-page .page-front {
-    transform: rotateY(0deg) translateZ(1px);
-}
-
-.book-page .page-back {
-    transform: rotateY(180deg) translateZ(1px);
-}
-
-.nextprev-btn {
-    position: absolute;
-    bottom: .9rem;
-    right: 1.5rem;
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-    font-size: 2rem;
-    color: var(--second-text-color);
-    display: inline-flex;
-    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: #375534;
+    color: white;
+    display: none;
     align-items: center;
-    transition: 5s;
-}
-
-.nextprev-btn:hover {
-    color: var(--main-color);
-}
-
-.nextprev-btn.back {
-    left: 1.5rem;
-}
-
-.book-page {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    background: var(--pages-color);
-    box-shadow: 0.0 .6rem rgba(0, 0, 0, .1);
-    display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.book-page .page-front, .book-page .page-back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    overflow: hidden;
-}
-.book-img {
-    max-width: 100%; /* A imagem ocupará 100% da largura da página */
-    max-height: 100%; /* A imagem ocupará 100% da altura da página */
-    object-fit: cover; /* A imagem será redimensionada para cobrir a área da página sem deformar */
-    object-position: center; /* Mantém a imagem centralizada */
-}
+    text-align: center;
+    padding: 20px;
+    z-index: 9999;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  @media (orientation: portrait) and (max-width: 768px) {
+    #rotate-notice {
+      display: flex;
+    }
+  
+    .flipbook {
+      display: none !important;
+    }
+  }
+  
