@@ -17,12 +17,15 @@ body {
 }
 
 .flipbook {
-    width: 1000px;
-    height: 600px;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    aspect-ratio: 5 / 3; 
 }
 
+
 .flipbook .hard {
-    background: #c0392b !important;
+    background: #f88447 !important;
     color: #fff;
     font-weight: bold;
     border: none; 
@@ -84,4 +87,5 @@ body {
       display: none !important;
     }
   }
+  
   
